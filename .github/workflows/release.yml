@@ -18,7 +18,7 @@ jobs:
           USERNAME: github-actions[bot]
           EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           BUMP_LEVEL: ${{ inputs.bump-level }}
-          GIHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "${USERNAME}"
           git config --global user.email "${EMAIL}"
